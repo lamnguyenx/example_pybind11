@@ -1,0 +1,17 @@
+[build-system]
+requires = ["pybind11>=2.10.0", "setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "example"
+version = "0.1.0"
+description = "Minimal example of calling C from Python using pybind11"
+requires-python = ">=3.8"
+dependencies = [
+    "pybind11>=2.10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pybind11-stubgen>=0.15.0",
+]
